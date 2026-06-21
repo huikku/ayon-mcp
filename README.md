@@ -53,9 +53,9 @@ claude mcp add ayon \
 
 ## Part of a tracker-MCP set — migrate between platforms
 
-Because all four MCPs emit the **same `project_summary`** and accept a uniform tool surface, an agent with two
+Because all five MCPs emit the **same `project_summary`** and accept a uniform tool surface, an agent with two
 loaded can **copy a project across trackers** (read source → write target) with no bespoke script — the
-clone-as-hub thesis as four shippable MCPs. AYON's own `ayon-ftrack` addon does exactly this kind of sync
+clone-as-hub thesis as five shippable MCPs. AYON's own `ayon-ftrack` addon does exactly this kind of sync
 internally; this MCP exposes AYON to the same agent-driven workflow.
 
 ## AYON specifics handled
@@ -70,8 +70,8 @@ Built on the official **`ayon-python-api`** (`ayon_api`) + `fastmcp`. MIT. Credi
 
 ## Docs
 
-📊 **[`COMPARISON.md`](COMPARISON.md)** — side-by-side of the four trackers (ShotGrid · ftrack · Kitsu ·
-AYON): data model, status vocabularies, and the migration incompatibilities to know about.
+📊 **[`COMPARISON.md`](COMPARISON.md)** — side-by-side of the five trackers (ShotGrid · ftrack · Kitsu ·
+AYON · NIM): data model, status vocabularies, and the migration incompatibilities to know about.
 
 🧪 **[`TESTING.md`](TESTING.md)** — how these servers are validated (live round-trip tests + two-level
 dry-run checks).
