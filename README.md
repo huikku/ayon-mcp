@@ -68,6 +68,14 @@ internally; this MCP exposes AYON to the same agent-driven workflow.
 Built on the official **`ayon-python-api`** (`ayon_api`) + `fastmcp`. MIT. Credits **Ynput** for AYON
 (AGPL server, open source).
 
+## Docs
+
+📊 **[`COMPARISON.md`](COMPARISON.md)** — side-by-side of the four trackers (ShotGrid · ftrack · Kitsu ·
+AYON): data model, status vocabularies, and the migration incompatibilities to know about.
+
+🧪 **[`TESTING.md`](TESTING.md)** — how these servers are validated (live round-trip tests + two-level
+dry-run checks).
+
 ---
 
 Built by **John Huikku** · [alienrobot.com](https://alienrobot.com)
