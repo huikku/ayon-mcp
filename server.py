@@ -257,7 +257,8 @@ def project_summary(project: str):
         elif ft in _SEQ_TYPES:
             seqs[nm] = {"path": f.get("path")}
     return _clean({
-        "tracker": "ayon", "project": project,
+        "tracker": "ayon",
+        "project": {"name": project, "code": (ayon_api.get_project(project) or {}).get("code")},
         "counts": {"folders": len(folders), "sequences": len(seqs),
                    "assets": len(assets), "shots": len(shots), "tasks": len(tasks)},
         "sequences": list(seqs.keys()),
